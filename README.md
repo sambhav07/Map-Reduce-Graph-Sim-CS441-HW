@@ -1,3 +1,6 @@
+## Author : Sambhav Jain
+
+## Email : sjain218@uic.edu
 
 # Project Title: Distributed Graph Similarity Calculation B/W Original and Perturbed Graph
 
@@ -102,4 +105,6 @@ For a set of 50 nodes in the original and 54 nodes in the perturbed graph, the o
 
 ![Description](https://drive.google.com/uc?export=view&id=1kRRkQtIttVO1oKkl4KLsB-ng3vcU0VjA)
 
+## Video Link:
+https://youtu.be/e6XiIUHZmpE
 
