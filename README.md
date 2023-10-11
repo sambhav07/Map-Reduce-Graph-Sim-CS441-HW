@@ -54,9 +54,7 @@ This ensures that all the dependencies from build.sbt are resolved and indexed l
 #### 3. Set Program Arguments
 Pass the program arguments from edit configurations as below:
 
-
-Copy code
-/Users/sambhavjain/Desktop/cs441-assignments/NetGameSim/outputs/NetGraph_11-10-23-02-33-24.ngs
+`/Users/sambhavjain/Desktop/cs441-assignments/NetGameSim/outputs/NetGraph_11-10-23-02-33-24.ngs
 /Users/sambhavjain/Desktop/cs441-assignments/NetGameSim/outputs/NetGraph_11-10-23-02-33-24.ngs.perturbed
 /Users/sambhavjain/Desktop/cs441-assignments/NetGameSim/outputs/Combinations.txt
 /Users/sambhavjain/Desktop/cs441-assignments/NetGameSim/src/main/resources/output_nodes
@@ -64,7 +62,7 @@ Copy code
 /Users/sambhavjain/Desktop/cs441-assignments/NetGameSim/src/main/resources/output_edges
 /Users/sambhavjain/Desktop/cs441-assignments/NetGameSim/src/main/resources/output_results
 /Users/sambhavjain/Desktop/cs441-assignments/NetGameSim/src/main/resources/output_results/part-00000
-/Users/sambhavjain/Desktop/cs441-assignments/NetGameSim/outputs/NetGraph_11-10-23-02-33-24.ngs.yaml
+/Users/sambhavjain/Desktop/cs441-assignments/NetGameSim/outputs/NetGraph_11-10-23-02-33-24.ngs.yaml/`
 #### 4. Run the Main File
 sh
 Copy code
