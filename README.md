@@ -1,5 +1,5 @@
 
-# Project Title: Distributed Graph Similarity Calculation with AWS EMR
+# Project Title: Distributed Graph Similarity Calculation B/W Original and Perturbed Graph
 
 Description
 
