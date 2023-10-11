@@ -55,9 +55,8 @@ git clone https://github.com/sambhav07/Map-Reduce-Graph-Sim-CS441-HW.git
 cd Map-Reduce-Graph-Sim-CS441-HW/`
 
 #### 2. Build the Project
-sh
-Copy code
-sbt clean compile
+`
+sbt clean compile/`
 This ensures that all the dependencies from build.sbt are resolved and indexed locally.
 
 #### 3. Set Program Arguments
@@ -73,13 +72,10 @@ Pass the program arguments from edit configurations as below:
 /Users/sambhavjain/Desktop/cs441-assignments/NetGameSim/src/main/resources/output_results/part-00000
 /Users/sambhavjain/Desktop/cs441-assignments/NetGameSim/outputs/NetGraph_11-10-23-02-33-24.ngs.yaml/`
 #### 4. Run the Main File
-sh
-Copy code
-sbt run
-Execute MyMain to start the project. The intermediate shards and final output files can be found at /Users/sambhavjain/Desktop/cs441-assignments/NetGameSim/src/main/resources.
+Execute `sbt run/` MyMain to start the project. The intermediate shards and final output files can be found at /Users/sambhavjain/Desktop/cs441-assignments/NetGameSim/src/main/resources.
 
 ### AWS EMR
-Initial Setup
+For Initial Setup
 Create an AWS S3 bucket to host the JAR and necessary input files (i.e., .ngs and .yaml files).
 Inside the bucket, create input, jar, and output folders.
 Running Steps
