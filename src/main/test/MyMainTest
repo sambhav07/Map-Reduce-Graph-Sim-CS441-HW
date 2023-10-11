@@ -1,0 +1,55 @@
+package com.lsc
+
+import org.mockito.Mockito._
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should.Matchers
+import org.scalatestplus.mockito.MockitoSugar
+import java.io.File
+import java.nio.file.{Files, Paths}
+
+class MyMainTest extends AnyFlatSpec with Matchers with MockitoSugar {
+
+  "MyMain.parsePath" should "parse S3 path correctly" in {
+    val path = "s3://mybucket/myfile.txt"
+    val (directory, fileName, isRemote) = MyMain.parsePath(path)
+    directory shouldEqual "s3://mybucket"
+    fileName shouldEqual "myfile.txt"
+    isRemote shouldBe true
+  }
+
+  it should "parse local file path correctly" in {
+    val tempFile = Files.createTempFile("test", ".txt").toFile
+    val path = tempFile.getAbsolutePath
+    val (directory, fileName, isRemote) = MyMain.parsePath(path)
+    directory shouldEqual tempFile.getParent
+    fileName shouldEqual tempFile.getName
+    isRemote shouldBe false
+
+    // Clean up
+    tempFile.delete()
+  }
+
+  // Add more tests for other types of paths
+
+  "MyMain.main" should "execute without exceptions" in {
+    // Prepare test data and mocks
+    val args = Array(
+      "test1.txt",
+      "test2.txt",
+      "output1",
+      "output2",
+      "output3",
+      "output4",
+      "output5",
+      "output6",
+      "output7"
+    )
+
+    // You might need to mock or prepare actual files and directories
+
+    // Execute the main method
+    MyMain.main(args)
+
+    // Add assertions to verify the expected outcomes, e.g., files created, logs written, etc.
+  }
+}

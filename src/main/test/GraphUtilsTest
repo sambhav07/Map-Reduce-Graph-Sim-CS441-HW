@@ -1,0 +1,50 @@
+package com.lsc
+
+import org.mockito.Mockito._
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should.Matchers
+import org.scalatestplus.mockito.MockitoSugar
+import software.amazon.awssdk.services.s3.S3Client
+import java.nio.file.{Files, Paths}
+import scala.io.Source
+
+class GraphUtilsTest extends AnyFlatSpec with Matchers with MockitoSugar {
+
+  "GraphUtils.writeToPath" should "write content to a file" in {
+    val content = "test content"
+    val path = "test.txt"
+
+    GraphUtils.writeToPath(content, path)
+
+    val writtenContent = new String(Files.readAllBytes(Paths.get(path)))
+    writtenContent shouldEqual content
+
+    // Clean up
+    Files.deleteIfExists(Paths.get(path))
+  }
+
+  // Add more tests for writing to S3, etc., you might need to mock S3Client
+
+  "GraphUtils.loadGraphAndGenerateCombinations" should "process graphs and generate combinations" in {
+    // Mock or prepare the necessary data and dependencies
+    val originalGraphFileName = "originalGraph.txt"
+    val perturbedGraphFileName = "perturbedGraph.txt"
+    val outputDirectory = "output"
+    val isRemoteOriginal = false
+    val isRemotePerturbed = false
+
+    // You might need to mock NetGraph.load or prepare actual graph files
+
+    GraphUtils.loadGraphAndGenerateCombinations(originalGraphFileName, perturbedGraphFileName, outputDirectory, isRemoteOriginal, isRemotePerturbed)
+
+    // Verify the expected files are created with correct content
+    val combinationsPath = Paths.get(s"$outputDirectory/Combinations.txt")
+    Files.exists(combinationsPath) shouldBe true
+
+    // Clean up
+    Files.deleteIfExists(combinationsPath)
+    Files.deleteIfExists(Paths.get(s"$outputDirectory/AttributeRanges.txt"))
+  }
+
+  // Similar tests for loadGraphAndGenerateActionCombinations
+}
