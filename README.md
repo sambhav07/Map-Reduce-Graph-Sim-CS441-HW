@@ -98,5 +98,10 @@ After the jobs are completed, results can be viewed in the output directory in t
 
 
 ## Output:
+For a set of 50 nodes in the original and 54 nodes in the perturbed graph, the output is as follows:
 
-![Project Output](https://path_to_your_image.com/image.jpg)
+![Description](https://drive.google.com/uc?export=view&id=1PzxYeyQjBLrAO-B4UJwvFwRA5L1dWfon)
+
+![Description](https://drive.google.com/uc?export=view&id=1kRRkQtIttVO1oKkl4KLsB-ng3vcU0VjA)
+
+
