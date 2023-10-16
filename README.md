@@ -1,3 +1,5 @@
+### NOTE : I have included the files of NetGraphSim project given to us by professor which were required for running the project in this master branch. However, I made the submission for the project on main branch I am informing in order to notify that my submission had already been done I just made a master branch to push dependent files and I avoided creating PR to avoid resolving merge conflicts.
+
 ### Author : Sambhav Jain
 
 ### Email Id : sjain218@uic.edu
@@ -36,9 +38,12 @@ Utilized **NetGraphSim** to generate a `.ngs` file containing the original and p
 
 - `src/`                 # Source files
   - `main/scala/`        # Scala application files
-  - `test/scala/`        # Test files using Scalatest
   - `resources/`         # Resources related to the project
-    - `output/`          # Results of the similarity calculations
+      - `output_nodes/`          # Results of the nodes similarity calculations
+      - `output_edges/`          # Results of the edges similarity calculations
+      - `output_results/`        # Results of the classifications based on my algorithm
+  - `test/scala/`        # Test files using Scalatest
+- `output/`              # Consists of shards
 - `config/`              # Configuration files for input parameters
 - `logs/`                # Log files generated during execution
 
@@ -72,7 +77,10 @@ Pass the program arguments from edit configurations as below:
 /Users/sambhavjain/Desktop/cs441-assignments/NetGameSim/src/main/resources/output_results/part-00000
 /Users/sambhavjain/Desktop/cs441-assignments/NetGameSim/outputs/NetGraph_11-10-23-02-33-24.ngs.yaml/`
 #### 4. Run the Main File
-Execute `sbt run/` MyMain to start the project. The intermediate shards and final output files can be found at /Users/sambhavjain/Desktop/cs441-assignments/NetGameSim/src/main/resources.
+Execute MyMain to start the project. The intermediate shards and final output files can be found at /Users/sambhavjain/Desktop/cs441-assignments/NetGameSim/src/main/resources.
+
+### 5. Run the Tests
+To ensure the functionality and correctness of the implemented logic, execute the test suites available in the project using command `sbt test` . Test results will be displayed in the terminal, showcasing passed and failed tests.
 
 ### AWS EMR
 For Initial Setup
