@@ -1,4 +1,4 @@
-### NOTE : I have included the files of NetGraphSim project given to us by professor which were required for running the project in this master branch. However, I made the submission for the project on main branch I am informing in order to notify that my submission had already been done I just made a master branch to push dependent files and I avoided creating PR to avoid resolving merge conflicts.
+### NOTE : I have included the files of NetGraphSim project given to us by professor which were required for running the project in this master branch. However, I made the submission for the project on main branch I am informing in order to notify that my submission had already been done before the deadline I just made a master branch to push dependent files and I avoided creating PR to avoid resolving merge conflicts.
 
 ### Author : Sambhav Jain
 
