@@ -34,7 +34,7 @@ object MyMain:
   val hostAddress: String = ipAddr.getHostAddress
 
 
-  def parsePath(path: String): (String, String, Boolean) = {
+  def parsePath(  path: String): (String, String, Boolean) = {
     logger.trace(s"Parsing path: $path")
     if (path.startsWith("s3://") || path.startsWith("https://")) {
       val isRemote = true

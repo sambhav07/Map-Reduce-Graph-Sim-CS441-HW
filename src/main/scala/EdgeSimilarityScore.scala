@@ -1,8 +1,9 @@
 package com.lsc
 
-import com.lsc.MyMain.logger
+import MyMain.logger
+
 import org.apache.hadoop.conf.*
-import org.apache.hadoop.fs.Path
+import org.apache.hadoop.fs.{FileSystem, Path}
 import org.apache.hadoop.io.*
 import org.apache.hadoop.mapred.*
 import org.apache.hadoop.util.*
@@ -10,13 +11,10 @@ import org.apache.hadoop.util.*
 import java.io.IOException
 import java.util
 import scala.collection.mutable.ListBuffer
-import scala.io.Source
+import scala.io.{BufferedSource, Source}
 import scala.jdk.CollectionConverters.*
 import scala.math.{pow, sqrt}
 import scala.util.Try
-import org.apache.hadoop.fs.{FileSystem, Path}
-
-import scala.io.BufferedSource
 object EdgeSimilarityScore:
   class Map extends MapReduceBase with Mapper[LongWritable, Text, Text, Text]:
 

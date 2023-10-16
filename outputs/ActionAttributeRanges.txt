@@ -1,0 +1,5 @@
+toId: 0.0 to 196.0
+resultingValue: 0.0 to 99.0
+actionType: 0.0 to 19.0
+cost: 4.438801375618029E-4 to 0.9989410575329741
+fromId: 0.0 to 221.0
