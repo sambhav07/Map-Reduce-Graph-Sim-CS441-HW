@@ -1,0 +1,5 @@
+Student - Sambhav Jain
+
+Good code, documentation and video. You exhibit a good understanding of map/reduce and it's implementation. Keep it up!
+
+Grade = 15%
